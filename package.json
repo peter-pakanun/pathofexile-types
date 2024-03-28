@@ -1,0 +1,24 @@
+{
+  "name": "pathofexile-types",
+  "version": "3.24.0",
+  "description": "TypeScript definitions for Path of Exile API",
+  "main": "",
+  "types": "index.d.ts",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peter-pakanun/pathofexile-types.git"
+  },
+  "keywords": [
+    "poe",
+    "types",
+    "typescript",
+    "pathofexile"
+  ],
+  "author": "Peter Pakanun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/peter-pakanun/pathofexile-types/issues"
+  },
+  "homepage": "https://github.com/peter-pakanun/pathofexile-types#readme"
+}
