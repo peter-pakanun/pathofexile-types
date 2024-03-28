@@ -1,5 +1,5 @@
-import { Item, ItemJewelData } from "./item";
-import { PassiveNode } from "./passive";
+import type { Item, ItemJewelData } from "./item";
+import type { PassiveNode } from "./passive";
 
 type Bandit = "Kraityn" | "Alira" | "Oak" | "Eramir";
 type MajotPantheon = "TheBrineKing" | "Arakaali" | "Solaris" | "Lunaris";

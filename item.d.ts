@@ -1,30 +1,10 @@
+import type { DisplayMode, FrameType } from "./enum";
+import type { PassiveGroup, PassiveNode } from "./passive";
+
 export interface ItemSocket {
   group: number;
   attr?: "S" | "D" | "I" | "G" | "A" | "DV";
   sColour?: "R" | "G" | "B" | "W" | "A" | "DV";
-}
-
-export enum DisplayMode {
-  /**
-   * Name should be followed by values
-   */
-  NAME_THEN_VALUE = 0,
-  /**
-   * Values should be followed by name
-   */
-  VALUE_THEN_NAME = 1,
-  /**
-   * Progress bar
-   */
-  PROGRESS_BAR = 2,
-  /**
-   * Values should be inserted into the string by index
-   */
-  INSERT_VALUE_BY_INDEX = 3,
-  /**
-   * Separator
-   */
-  SEPARATOR = 4,
 }
 
 export interface ItemProperty {
@@ -63,21 +43,6 @@ export interface CrucibleNode {
   orbitIndex?: number; // the node's position within the column
   out: string[]; // node identifiers of nodes this one connects to
   in: string[]; // node identifiers of nodes connected to this one
-}
-
-export enum FrameType {
-  Normal = 0,
-  Magic = 1,
-  Rare = 2,
-  Unique = 3,
-  Gem = 4,
-  Currency = 5,
-  DivinationCard = 6,
-  Quest = 7,
-  Prophecy = 8,
-  Foil = 9,
-  SupporterFoil = 10,
-  Necropolis = 11,
 }
 
 export interface Item {
@@ -279,7 +244,6 @@ export interface Item {
   colour?: "S" | "D" | "I" | "G";
 }
 
-import { PassiveGroup, PassiveNode } from "./passive";
 export interface ItemJewelData {
   type: string;
   radius?: number;

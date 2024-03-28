@@ -1,4 +1,5 @@
-import { Item } from "./item";
+import type { Item } from "./item";
+import type { Site_StashTabType } from "./enum";
 
 //== Below is types pathofexile.com API use for its endpoints ==/
 
@@ -34,24 +35,6 @@ export interface Site_Character {
 
   /** Whether the character able to be pinned */
   pinnable: boolean;
-}
-
-export enum Site_StashTabType {
-  Normal = "NormalStash",
-  Currency = "CurrencyStash",
-  Map = "MapStash",
-  Premium = "PremiumStash",
-  Quad = "QuadStash",
-  Flask = "FlaskStash",
-  Gem = "GemStash",
-  Essence = "EssenceStash",
-  DivinationCard = "DivinationCardStash",
-  Unique = "UniqueStash",
-  Fragment = "FragmentStash",
-  Blight = "BlightStash",
-  Delve = "DelveStash",
-  Metamorph = "MetamorphStash",
-  Delirium = "DeliriumStash",
 }
 
 /**

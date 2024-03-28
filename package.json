@@ -1,8 +1,8 @@
 {
   "name": "pathofexile-types",
-  "version": "3.24.0b",
+  "version": "3.24.0c",
   "description": "TypeScript definitions for Path of Exile API",
-  "main": "",
+  "main": "index.ts",
   "types": "index.d.ts",
   "scripts": {},
   "repository": {
