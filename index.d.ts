@@ -3,8 +3,6 @@ export type { Character } from "./character";
 export type {
   Item,
   CrucibleNode,
-  DisplayMode,
-  FrameType,
   ItemProperty,
   ItemSocket,
   ItemJewelData,
@@ -18,7 +16,9 @@ export type { StashTab, PublicStashChange } from "./stash";
 export type {
   Site_Character,
   Site_StashTab,
-  Site_StashTabType,
   Site_getCharactersResponse,
   Site_getStashItemsResponse,
 } from "./site";
+
+export { DisplayMode, FrameType } from "./item";
+export { Site_StashTabType } from "./site";
