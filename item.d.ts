@@ -1,4 +1,3 @@
-import type { DisplayMode, FrameType } from "./enum";
 import type { PassiveGroup, PassiveNode } from "./passive";
 
 export interface ItemSocket {
@@ -18,7 +17,15 @@ export interface ItemProperty {
       number
     ]
   >;
-  displayMode?: DisplayMode;
+  /**
+   * uint
+   * - `0`: Name should be followed by values
+   * - `1`: Values should be followed by name
+   * - `2`: Progress bar
+   * - `3`: Values should be inserted into the string by index
+   * - `4`: Separator
+   */
+  displayMode?: 0 | 1 | 2 | 3 | 4;
   /**
    * (double) rounded to 2 decimal places
    */
@@ -218,7 +225,22 @@ export interface Item {
   };
   /** always `true` if present */
   ruthless?: boolean;
-  frameType?: FrameType;
+  /**
+   * uint
+   * - `0`: Normal
+   * - `1`: Magic
+   * - `2`: Rare
+   * - `3`: Unique
+   * - `4`: Gem
+   * - `5`: Currency
+   * - `6`: Divination Card
+   * - `7`: Quest
+   * - `8`: Prophecy
+   * - `9`: Foil
+   * - `10`: Supporter Foil
+   * - `11`: Necropolis
+   */
+  frameType?: 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11;
   artFilename?: string;
   hybrid?: {
     isVaalGem?: boolean;

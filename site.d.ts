@@ -1,5 +1,4 @@
 import type { Item } from "./item";
-import type { Site_StashTabType } from "./enum";
 
 //== Below is types pathofexile.com API use for its endpoints ==/
 
@@ -47,7 +46,22 @@ export interface Site_StashTab {
   i: number;
   /** ID of the tab, a 10 digit hexadecimal string */
   id: string;
-  type: Site_StashTabType;
+  type:
+    | "NormalStash"
+    | "CurrencyStash"
+    | "MapStash"
+    | "PremiumStash"
+    | "QuadStash"
+    | "FlaskStash"
+    | "GemStash"
+    | "EssenceStash"
+    | "DivinationCardStash"
+    | "UniqueStash"
+    | "FragmentStash"
+    | "BlightStash"
+    | "DelveStash"
+    | "MetamorphStash"
+    | "DeliriumStash";
   selected: boolean;
   colour: {
     r: number;
